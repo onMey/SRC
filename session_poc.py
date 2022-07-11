@@ -22,7 +22,7 @@ def generate_random_str(randomlength=16):
   return random_str
 
 #mm = generate_random_str(8) #随机生成文件名
-mm = 'qUcBe3G9'
+mm = 'qUcBe3G8'
 
 webshell_name1 = mm+'.jsp'
 webshell_name2 = '../'+webshell_name1
